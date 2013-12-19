@@ -1,6 +1,6 @@
 package elsealabs.eutil.schedule;
 
-public class Day {
+public class Day implements Comparable<Day> {
 	
 	private int INT;
 	private char CHAR;
@@ -66,6 +66,11 @@ public class Day {
 	
 	public String getString() {
 		return STRING;
+	}
+
+	@Override
+	public int compareTo(Day o) {
+		return this.getInt() - o.getInt();
 	}
 
 }
