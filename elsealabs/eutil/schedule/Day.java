@@ -1,6 +1,9 @@
 package elsealabs.eutil.schedule;
 
-public class Day implements Comparable<Day> {
+import java.io.Serializable;
+
+public class Day implements Comparable<Day>, Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	private int INT;
 	private char CHAR;

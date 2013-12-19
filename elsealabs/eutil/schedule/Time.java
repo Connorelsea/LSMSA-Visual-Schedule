@@ -1,5 +1,7 @@
 package elsealabs.eutil.schedule;
 
+import java.io.Serializable;
+
 /**
  *  <b>Time.class</b></br>
  *  <i>Represents a static time during the day accurate to the minute</i></br>
@@ -11,7 +13,8 @@ package elsealabs.eutil.schedule;
  *  @author Elsea Labs
  *  @version 2.0
  */
-public class Time implements Comparable<Time> {
+public class Time implements Comparable<Time>, Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	private int HOUR;
 	private int MIN;

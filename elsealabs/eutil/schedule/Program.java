@@ -30,36 +30,39 @@ public class Program {
 			System.out.printf("\n");
 		}
 		
-		ArrayList<Day> days = new ArrayList<Day>();
+//		ArrayList<Day> days = new ArrayList<Day>();
+//		
+//		Day d1 = null;
+//		Day d2 = null;
+//		Day d3 = null;
+//		Day d4 = null;
+//		
+//		try {
+//			System.out.printf("Creating Days\n");
+//			d2 = new Day(2);
+//			d3 = new Day(5);
+//			d4 = new Day(4);
+//		} catch (Exception ex) {
+//			System.out.printf("Error\n");
+//			ex.printStackTrace();
+//		}
+//		
+//		days.add(d1);
+//		days.add(d2);
+//		days.add(d3);
+//		days.add(d4);
+//		
+//		Collections.sort(days);
+//		
+//		System.out.printf("\n");
+//		
+//		for (Day d : days) {
+//			System.out.printf("%d\n", d.getInt());
+//		}
 		
-		Day d1 = null;
-		Day d2 = null;
-		Day d3 = null;
-		Day d4 = null;
-		
-		try {
-			System.out.printf("Creating Days\n");
-			d1 = new Day(4);
-			d2 = new Day(2);
-			d3 = new Day(5);
-			d4 = new Day(4);
-		} catch (Exception ex) {
-			System.out.printf("Error\n");
-			ex.printStackTrace();
-		}
-		
-		days.add(d1);
-		days.add(d2);
-		days.add(d3);
-		days.add(d4);
-		
-		Collections.sort(days);
-		
-		System.out.printf("\n");
-		
-		for (Day d : days) {
-			System.out.printf("%d\n", d.getInt());
-		}
+		Course course = new Course();
+		course.setName("NAMENAMENAME");
+		course.validate();
 		
 	}
 	
