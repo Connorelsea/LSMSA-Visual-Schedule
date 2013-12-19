@@ -75,7 +75,7 @@ public class Time implements Comparable<Time> {
 				} else {
 					if (this.getMin() > other.getMin()) return greater;
 					if (this.getMin() == other.getMin()) return 0;
-					return -2;
+					return 0;
 				}
 			}
 			

@@ -6,8 +6,16 @@ public class Day {
 	private char CHAR;
 	private String STRING;
 	
-	public Day(int i) {
-		
+	public Day(int i) throws Exception {
+		parseInfoFrom(i);
+	}
+	
+	public Day(char i) throws Exception {
+		parseInfoFrom(i);
+	}
+	
+	public Day(String i) throws Exception {
+		parseInfoFrom(i);
 	}
 	
 	public void parseInfoFrom(int i) throws Exception {
@@ -30,7 +38,15 @@ public class Day {
 		else throw new Exception("Could not parse a day from char \"" + i + "\"");
 	}
 	
-	public void parseInfoFrom(String i) {
+	public void parseInfoFrom(String i) throws Exception {
+		
+		String check = i.toLowerCase();
+		if (check.equals("monday") || check.contains("monday")) setInfo(1, 'M', "Monday");
+		else if (check.equals("tuesday") || check.contains("tuesday")) setInfo(2, 'T', "Tuesday");
+		else if (check.equals("wednesday") || check.contains("wednesday")) setInfo(3, 'W', "Wednesday");
+		else if (check.equals("thursday") || check.contains("thursday")) setInfo(4, 'R', "Wednesday");
+		else if (check.equals("friday") || check.contains("friday")) setInfo(5, 'F', "Friday");
+		else throw new Exception("Could not parse a day from char \"" + i + "\"");
 		
 	}
 	
@@ -38,6 +54,18 @@ public class Day {
 		INT = i;
 		CHAR = c;
 		STRING = s;
+	}
+	
+	public int getInt() {
+		return INT;
+	}
+	
+	public char getChar() {
+		return CHAR;
+	}
+	
+	public String getString() {
+		return STRING;
 	}
 
 }
