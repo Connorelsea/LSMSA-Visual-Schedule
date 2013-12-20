@@ -13,7 +13,7 @@ import java.io.Serializable;
  *  @author Elsea Labs
  *  @version 2.0
  */
-public class Time implements Comparable<Time>, Serializable {
+public class Time implements Comparable<Time>, Serializable, Cloneable {
 	private static final long serialVersionUID = 1L;
 	
 	private int HOUR;
@@ -112,6 +112,10 @@ public class Time implements Comparable<Time>, Serializable {
 	
 	public int getTimeSector() {
 		return TIME_SECTOR;
+	}
+	
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 
 }
