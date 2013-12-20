@@ -7,10 +7,7 @@ public class InputParser {
 	private String STRING;
 	private ArrayList<Character> STRING_ARRAY;
 	
-	private TimeResource TIME_RES;
-	
 	private TimeDayHolder TD_HOLDER;
-	private Course COURSE;
 	
 	private int CURRENT_TIME_VAL;
 	private boolean TRACKING_CTV;
@@ -18,9 +15,6 @@ public class InputParser {
 	
 	private String CURRENT_LETTER;
 	private boolean TRACKING_LETTER;
-	private boolean LETTER_INTERRUPTION;
-	
-	private boolean FINALIZED;
 	
 	private Day DAY;
 	private Time TIME;
@@ -31,7 +25,6 @@ public class InputParser {
 		STRING_ARRAY = new ArrayList<Character>();
 		for (char a : STRING.toCharArray()) STRING_ARRAY.add(a);
 		
-		COURSE = new Course();
 		TD_HOLDER = new TimeDayHolder();
 		
 		for (char s : STRING_ARRAY) {
@@ -96,10 +89,6 @@ public class InputParser {
 				else if (TRACKING_CTV == false && TRACKING_LETTER == false) {
 					throw new Exception("No time to assign day to");
 				}
-				
-			}
-			
-			else {
 				
 			}
 			
