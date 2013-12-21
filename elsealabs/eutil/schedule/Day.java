@@ -9,8 +9,6 @@ public class Day implements Comparable<Day>, Serializable {
 	private char CHAR;
 	private String STRING;
 	
-	private TimeResource TR;
-	
 	public Day(int i) throws Exception {
 		parseInfoFrom(i);
 	}
@@ -27,29 +25,29 @@ public class Day implements Comparable<Day>, Serializable {
 		
 		if (INT == 1 || INT == 3 || INT == 5) {
 			
-			if (currentTimeValue == 1) return TR.MWF_1;
-			if (currentTimeValue == 2) return TR.MWF_2;
-			if (currentTimeValue == 3) return TR.MWF_3;
-			if (currentTimeValue == 4) return TR.MWF_4;
-			if (currentTimeValue == 5) return TR.MWF_5;
-			if (currentTimeValue == 6) return TR.MWF_6;
-			if (currentTimeValue == 7) return TR.MWF_7;
-			if (currentTimeValue == 8) return TR.MWF_8;
-			if (currentTimeValue == 9) return TR.MWF_9;
-			if (currentTimeValue == 10) return TR.MWF_10;
+			if (currentTimeValue == 1) return TimeResource.MWF_1;
+			if (currentTimeValue == 2) return TimeResource.MWF_2;
+			if (currentTimeValue == 3) return TimeResource.MWF_3;
+			if (currentTimeValue == 4) return TimeResource.MWF_4;
+			if (currentTimeValue == 5) return TimeResource.MWF_5;
+			if (currentTimeValue == 6) return TimeResource.MWF_6;
+			if (currentTimeValue == 7) return TimeResource.MWF_7;
+			if (currentTimeValue == 8) return TimeResource.MWF_8;
+			if (currentTimeValue == 9) return TimeResource.MWF_9;
+			if (currentTimeValue == 10) return TimeResource.MWF_10;
 			
 		} else {
 			
-			if (currentTimeValue == 1) return TR.TR_1;
-			if (currentTimeValue == 2) return TR.TR_2;
-			if (currentTimeValue == 3) return TR.TR_3;
-			if (currentTimeValue == 4) return TR.TR_4;
-			if (currentTimeValue == 5) return TR.TR_5;
-			if (currentTimeValue == 6) return TR.TR_6;
-			if (currentTimeValue == 7) return TR.TR_7;
-			if (currentTimeValue == 8) return TR.TR_8;
-			if (currentTimeValue == 9) return TR.TR_9;
-			if (currentTimeValue == 10) return TR.TR_10;
+			if (currentTimeValue == 1) return TimeResource.TR_1;
+			if (currentTimeValue == 2) return TimeResource.TR_2;
+			if (currentTimeValue == 3) return TimeResource.TR_3;
+			if (currentTimeValue == 4) return TimeResource.TR_4;
+			if (currentTimeValue == 5) return TimeResource.TR_5;
+			if (currentTimeValue == 6) return TimeResource.TR_6;
+			if (currentTimeValue == 7) return TimeResource.TR_7;
+			if (currentTimeValue == 8) return TimeResource.TR_8;
+			if (currentTimeValue == 9) return TimeResource.TR_9;
+			if (currentTimeValue == 10) return TimeResource.TR_10;
 			
 		}
 		

@@ -44,6 +44,10 @@ public class Course implements Serializable {
 		return VALIDATED;
 	}
 	
+	public boolean isValidated() {
+		return VALIDATED;
+	}
+	
 	private void generatePID() {
 		setPID(NAME.replaceAll("\\s+",""));
 	}
