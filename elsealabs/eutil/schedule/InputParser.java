@@ -15,7 +15,7 @@ public class InputParser {
 	
 	private String CURRENT_LETTER;
 	private boolean TRACKING_LETTER;
-	
+
 	private Day DAY;
 	private Time TIME;
 	
@@ -49,7 +49,7 @@ public class InputParser {
 				else {
 					TRACKING_CTV = true;
 					CURRENT_TIME_VAL = Integer.parseInt(s + "");
-				}
+				}              
 				
 			}
 			

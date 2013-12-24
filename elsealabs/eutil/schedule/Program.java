@@ -5,7 +5,6 @@ public class Program {
 	public static void main(String[] args) {
 		
 		InputParser IP = new InputParser();
-		Schedule test = new Schedule();
 		
 		TimeDayHolder tdh1 = null;
 		
